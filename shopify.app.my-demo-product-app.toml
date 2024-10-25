@@ -1,0 +1,30 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "770cdae62534e7384995a86c4a063ffc"
+name = "My Demo Product App"
+handle = "my-demo-product-app-1"
+application_url = "https://uniform-lift-aye-zones.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-2c54dbd1.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://shopify.dev/apps/default-app-home/api/auth",
+  "https://uniform-lift-aye-zones.trycloudflare.com/auth/callback",
+  "https://uniform-lift-aye-zones.trycloudflare.com/auth/shopify/callback",
+  "https://uniform-lift-aye-zones.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
